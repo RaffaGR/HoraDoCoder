@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress 4%</title>
+    <script>
+        /* "use strict" */
+        // Retângulo
+        var bR = parseFloat(prompt("Base do Retângulo?"));
+        var aR = parseFloat(prompt("Altura do Retângulo?"));
+        var rA = bR * aR;
+
+        // Quadrado
+        var qL = parseFloat(prompt("Qual o lado do quadrado?"));
+        var qA = qL**2;
+        let qB = Math. sqrt(qA);
+
+        // Losango
+        var dMa = parseFloat(prompt("Qual é a maior diagonal do Losangolo?"));
+        var dMe = parseFloat(prompt("E a diagonal menor?"));
+        var lA = (dMa * dMe) / 2;
+
+        // Trapezio
+        var bMa = parseFloat(prompt("Trapezio qual a sua base maior?"));
+        var bMe = parseFloat(prompt("Preciso da base menor??"));
+        var alt = parseFloat(prompt("A Altura???!"));
+        var traA = (bMa + bMe) * alt / 2; /* alt = h */
+
+        // Paralelograma
+        var b = parseFloat(prompt("Para calcular a area do Paralelograma, precisarei do valor da base e da altura;\nPrimeiramente, poderia colocar a base?"));
+        var h = parseFloat(prompt("Segundamente, a altura(h)?"));
+        var pA = b * h;
+
+        // Triângulo
+        var Base = parseFloat(prompt("Aqui voce digita o comprimento da base do triangulo."));
+        var a = parseFloat(prompt("Agora o comprimento da altura."));
+        var triA = ( Base * a) /2;
+
+
+        // Triangulo equilátero
+        var side = parseFloat(prompt("É essencial colocar o lado do triangulo equilatero tambem!"));
+        var AtEqui = (side**2) * Math.sqrt(3)/4;
+        var Ahex = AtEqui * 6;
+
+        // Círculo
+        var rC = parseFloat(prompt("Para finalizar, voce pode colocar o raio do circulo se quiser obter os resultados! buahaha"));
+        let cA = Math.PI * rC**2;
+        var cC = 2*Math.PI*rC;
+
+
+        /* Respostas */
+        alert(`A área do Retângulo: ${rA}`);
+        alert(`A área do Quadrado: ${qA}`);
+        alert(`A área do Losango: ${lA}`);
+        alert(`A área do Trapezio: ${traA}`);
+        alert(`Perfeito, aqui está a área do Paralelograma: ${pA}`);
+        alert(`A área do Triângulo: ${triA}`);
+        alert(`Que? Área do Hexágono?: ${Ahex}`);
+        alert(`A área do Círculo: ${cA}`);
+        document.write(`<h4>Retângulo: ${rA}</h4>`);
+        document.write(`<h4>Quadrado: ${qA}</h4>`);
+        document.write(`<h4>Losango: ${lA}</h4>`);
+        document.write(`<h4>Trapezio: ${traA}</h4>`);
+        document.write(`<h4>Paralelograma: ${pA}</h4>`);
+        document.write(`<h4>Triângulo: ${triA}</h4>`);
+        document.write(`<h4>Hexágono: ${Ahex}</h4>`);
+        document.write(`<h4>Círculo: ${cA}</h4>`);
+        document.write(`Já a linha ou comprimento do círculo é igual há: ${cC}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
